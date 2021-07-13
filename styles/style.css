@@ -9,6 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -29,6 +30,84 @@ hr {
   border-radius: 5px;
   padding: 30px;
   margin-top: 20px;
+}
+
+/* Header Section */
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #562eff;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.head-icon {
+  display: flex;
+}
+
+.head-icon img {
+  width: 40px;
+  height: 51px;
+  transition: all 0.4s ease;
+}
+
+.head-icon img:hover {
+  transform: rotate(30deg);
+}
+
+.head-title {
+  margin: 0;
+  padding: 7px 0 0 16px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.head-title:hover {
+  transform: rotate(-30deg);
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 80px;
+}
+
+.menu-links {
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+
+.nav-links a:hover {
+  font-size: 18px;
+}
+
+.profile-pic img {
+  width: 51px;
+  height: 51px;
+  transition: all 0.4s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1);
 }
 
 /* Top Players Section */
@@ -131,6 +210,7 @@ hr {
 }
 
 .course-title {
+  margin-bottom: 0px;
   color: #1e1e1e;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -184,6 +264,13 @@ hr {
 /* Media Queries */
 
 @media only screen and (max-width: 688px) {
+  .head-icon {
+    display: none;
+  }
+  .nav-items,
+  .profile-pic {
+    transform: scale(0.9);
+  }
   .container {
     width: 100%;
     padding: 10px 0;
@@ -217,6 +304,10 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .course-description {
+    text-align: left;
   }
 }
 
@@ -254,5 +345,9 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .course-description {
+    text-align: left;
   }
 }
