@@ -137,12 +137,19 @@ li {
 .player-image {
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .player-name {
   font-size: 18px;
   font-weight: 500;
   padding-left: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.player-name:hover {
+  color: #562eff;
 }
 
 /* Top Blogs Section */
@@ -163,6 +170,7 @@ li {
   font-weight: 500;
   color: #000000;
   margin: 0;
+  cursor: pointer;
 }
 
 .space {
@@ -182,6 +190,12 @@ li {
 .blogs .thumbnail img {
   width: 177px;
   height: 117px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.1);
 }
 
 .blog-info {
@@ -204,9 +218,19 @@ li {
   box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
 }
 
+.course-thumb {
+  overflow: hidden;
+}
+
+.course-thumb:hover img {
+  transform: scale(1.1) rotate(3deg);
+}
+
 .course-thumb img {
   width: 224px;
   height: 104px;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 
 .course-title {
@@ -215,6 +239,7 @@ li {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .course-author {
