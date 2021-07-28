@@ -1,4 +1,4 @@
-# Frontend Mentor - Leader Board Landing Page Solution
+# Programming Hero - Leader Board Landing Page Solution
 
 This is a solution to the [Leader Board Landing Page challenge on Programming Hero](https://github.com/ProgrammingHero1/leader-board). Programming Hero is a great frontend web development bootcamp for those who have the passion for learning and coding. It helps you improve your coding skills by buiding realistic projects.
 
