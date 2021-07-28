@@ -286,6 +286,15 @@ li {
   color: #ff4a60;
 }
 
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: #562eff;
+  text-decoration: none;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 688px) {
